@@ -1,0 +1,58 @@
+<hr> 
+
+<form #employeeForm="ngForm" (ngSubmit)="onSubmit(employeeForm)"> 
+     &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label>Details Form</label></div>
+        
+    </div>
+    &nbsp;
+         
+    <div class="row">
+        <div class="col-sm-3"><label>Employee no</label></div>
+        <div class="col-sm-6"><input type="text" name="empNo" [(ngModel)]="formModel.empNo"/></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label>Employee Name</label></div>
+        <div class="col-sm-6"><input type="text" name="empName" [(ngModel)]="formModel.empName"/></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label>Job</label></div>
+        <div class="col-sm-6"><input type="text" name="job" [(ngModel)]="formModel.job"/></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label>Hire Date</label></div>
+        <div class="col-sm-6"><input type="text" name="hireDate" [(ngModel)]="formModel.hireDate"/></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label>Manager ID </label></div>
+        <div class="col-sm-6"><input type="text" name="managerID" [(ngModel)]="formModel.managerID"/></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label>Salary</label></div>
+        <div class="col-sm-6"><input type="text" name="salary" [(ngModel)]="formModel.salary"/></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label>Commission</label></div>
+        <div class="col-sm-6"><input type="text" name="commision" [(ngModel)]="formModel.commision"/></div>
+    </div>
+    &nbsp;
+    <div class="row">
+        <div class="col-sm-3"><label>Department No</label></div>
+        <div class="col-sm-6"><input type="text" name="deptNo" [(ngModel)]="formModel.deptNo"/></div>
+    </div>
+    &nbsp;
+
+    <div class="row">
+        
+        <div class="col-sm-3">
+            <input type="submit" name="submit" value="submit" class="btn btn-primary"/></div>
+    </div>
+    &nbsp;
+</form>
